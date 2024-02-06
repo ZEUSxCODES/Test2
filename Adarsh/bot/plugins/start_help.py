@@ -83,9 +83,8 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Film_Nest"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/FilmNest_Chat")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/Anmol0700"), InlineKeyboardButton("💠 DEVELOPER", url="https://github.com/Adarsh-Goel")],
-                    [InlineKeyboardButton("💌 SUBSCRIBE 💌", url="https://youtube.com/@itzjeol")]
+                    [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/Film_Nest"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/FilmNest_Chat")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/anmol0700")],
                 ]
             ),
             
