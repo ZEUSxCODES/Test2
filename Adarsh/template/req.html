@@ -57,6 +57,7 @@
     </footer>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
 	<script>
+	const player = Plyr.setup('.player', { ads });{ enabled: true, publisherId: '1643061', tagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=4f9590acade58628f134bf5c19badaf6' }
         const controls = [
               'play-large',
               'rewind',
@@ -77,7 +78,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const player = Plyr.setup('.player', { controls });
         });
-	    const player = Plyr.setup('.player', { ads });{ enabled: false, publisherId: '1643061', tagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=4f9590acade58628f134bf5c19badaf6' }
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
