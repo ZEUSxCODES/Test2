@@ -43,10 +43,10 @@ async def root_route_handler(_):
 
     return web.json_response(
         {
-            "server_status": random.choice(status_messages),
-            "telegram_bot": random.choice(bot_messages),
+            "server_status": (status_messages),
+            "telegram_bot": (bot_messages),
             "connected_bots": len(multi_clients),
-            "Info" : random.choice(info_messages),
+            "Info" : (info_messages),
         }
     )
     
