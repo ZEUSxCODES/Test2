@@ -23,12 +23,30 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(_):
+    status_messages = [
+        "All systems are go!",
+        "We're up and running!",
+        "Ready to rock and roll!",
+        "Smooth sailing ahead!",
+        "Everything's looking peachy keen!",
+    ]
+    bot_messages = [
+        "Our Telegram bot, @" + StreamBot.username + ", is at your service!",
+        "Say hello to our trusty bot, @" + StreamBot.username + "!",
+        "Need assistance? Reach out to our bot, @" + StreamBot.username + "!",
+    ]
+    info_messages = [
+        "Explore the world of high-speed streaming by sending files to our Telegram bot!",
+        "Get ready for a streaming extravaganza with our Telegram bot!",
+        "Send files and embark on a streaming adventure with our Telegram bot!",
+    ]
+
     return web.json_response(
         {
-            "server_status": "running",
-            "telegram_bot": "@" + StreamBot.username,
+            "server_status": random.choice(status_messages),
+            "telegram_bot": random.choice(bot_messages),
             "connected_bots": len(multi_clients),
-            "Info" : "Go to Tg Bot Send files and enjoy hight speed streaming"
+            "Info" : random.choice(info_messages),
         }
     )
     
