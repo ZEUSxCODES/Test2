@@ -28,7 +28,6 @@ async def root_route_handler(_):
             "server_status": "running",
             "telegram_bot": "@" + StreamBot.username,
             "connected_bots": len(multi_clients),
-            ),
             "Info" : "Go to Tg Bot Send files and enjoy hight speed streaming"
         }
     )
